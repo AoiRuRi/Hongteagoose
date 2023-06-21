@@ -115,3 +115,16 @@
         height: 13vh;
     }
 }
+
+/*Footer設定*/
+.text-decoration 
+{
+    color: #FEC107;
+	text-decoration: none;
+}
+
+.text-decoration:hover
+{
+    color: #000080;
+}
+	

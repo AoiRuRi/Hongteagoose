@@ -139,3 +139,15 @@ tbody tr.empty-row td::before {
   margin-right: 10px;
   /* 其他樣式屬性 */
 }
+
+/* Footer設定 */
+.text-decoration 
+{
+    color: #FEC107;
+	text-decoration: none;
+}
+
+.text-decoration:hover
+{
+    color: #000080;
+}

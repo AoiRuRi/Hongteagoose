@@ -119,3 +119,16 @@ h1 {
 }
 
 /* Add more custom styles as needed */
+
+/* Footer設定 */
+.text-decoration 
+{
+  color: #FEC107;
+	text-decoration: none;
+}
+
+.text-decoration:hover
+{
+    color: #000080;
+}
+	

@@ -3362,3 +3362,14 @@ input, select, textarea {
 		  #cartItems {
 			margin-top: 20px;
 		  }
+/* Footer設定 */
+.text-decoration 
+{
+    color: #FEC107;
+	text-decoration: none;
+}
+
+.text-decoration:hover
+{
+    color: #000080;
+}
