@@ -3,7 +3,18 @@
 }
 body {
   font-size: 14px;
+  animation: fade-in 1s ease-in; /* 使用動畫效果，持續時間為1秒，緩入的動畫效果 */
 }
+
+@keyframes fade-in {    /* 淡入效果css */
+  from {
+    opacity: 0; /* 初始時透明度為0 */
+  }
+  to {
+    opacity: 1; /* 結束時透明度為1 */
+  }
+}
+
 /*navbar設定*/
 .navbar-nav li.nav-item a {
   padding: 10px;
