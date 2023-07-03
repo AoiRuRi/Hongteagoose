@@ -62,6 +62,7 @@
         <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
+        <button id="changepic">更換圖片</button>
         <div class="carousel-item active">
             <img id="slide1" src="images/slide1.png" class="d-block w-100" alt="Slide 1">
         </div>
@@ -80,151 +81,129 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-    
 </div>
 
-    <!-- 最新消息區塊 -->
 
+<!-- 虛擬的input元素(更換圖片視窗需要) -->
+<input type="file" id="file-input" style="display: none;" accept="image/*">
+
+<!-- 最新消息區塊 -->
     <div class="newsdiv1">
-        <h1 class="newstitle">最新消息</h1>
-        <div class="newsdiv2">
-            <div class="news">
-                <div class="newstext">
-                    <p class="newsdate">2023/05/01</p><p class="newsdata">最新消息一</p><br>
-                    <p class="newsdate">2023/04/30</p><p class="newsdata">最新消息二</p><br>
-                    <p class="newsdate">2023/04/29</p><p class="newsdata">最新消息三</p><br>
-                </div>
-            </div>
+            <h1 class="newstitle">最新消息</h1>
+<div class="newsdiv2">
+    <div class="news">
+        <div class="newstext">
+          <p class="newsdate" data-target="1">2023/05/01</p><p class="newsdata" data-target="1">最新消息一</p>
+          <button id="editnewsbutton1" class="editnewsbutton" data-target="1">編輯</button><br>
+          <p class="newsdate" data-target="2">2023/04/30</p><p class="newsdata" data-target="2">最新消息二</p>
+          <button id="editnewsbutton2" class="editnewsbutton" data-target="2">編輯</button><br>
+          <p class="newsdate" data-target="3">2023/04/29</p><p class="newsdata" data-target="3">最新消息三</p>
+          <button id="editnewsbutton3" class="editnewsbutton" data-target="3">編輯</button><br>
+
         </div>
-    </div>
+</div>
+
+</div>
+</div>
+</div>
 
 
-
-
-
-<!--熱門品項區塊-->
+  <!--熱門品項區塊-->
 <div class="p-5 text-center_hot">
-<div class="container">
-    <h1>熱門品項</h1>
-    <br>
-    <div class="row g-1">
+    <div class="container">
+      <h1>熱門品項</h1>
+      <br>
+      <div class="row g-1">
         <div class="col-lg">
-            <div class="card lg">
-                <img src="images/230505_5.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-warning">前往商品</a>
-                </div>
+          <div class="card lg">
+            <button class="change-image-button" data-image="image1">更換圖片</button>
+            <img id="image1" src="images/230505_5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-warning">前往商品</a><br>
+              <button class="edit-content-button">編輯內容</button>
             </div>
-        </div>
-        <div class="col-lg">
-            <div class="card lg">
-                <img src="images/230505_6.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-warning">前往商品</a>
-                </div>
-            </div>
+          </div>
         </div>
         <div class="col-lg">
-            <div class="card lg">
-                <img src="images/230505_7.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-warning">前往商品</a>
-                </div>
+          <div class="card lg">
+            <button class="change-image-button" data-image="image2">更換圖片</button>
+            <img id="image2" src="images/230505_6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-warning">前往商品</a><br>
+              <button class="edit-content-button">編輯內容</button>
             </div>
+          </div>
         </div>
-        <div class="container-fluid mt-5 ">
-                <button type="button" class="btn btn-warning btn-lg shop-btn" style="font-size: 30px">立即下單</button>
-                <button type="button" class="btn btn-outline-warning btn-lg disabled shop-btn" style="font-size: 30px;">提供宅配服務 <img src="images/delivery.png" style="width: 40px;height:40px;"></button>
+        <div class="col-lg">
+          <div class="card lg">
+            <button class="change-image-button" data-image="image3">更換圖片</button>
+            <img id="image3" src="images/230505_7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-warning">前往商品</a><br>
+              <button class="edit-content-button">編輯內容</button>
+            </div>
+          </div>
         </div>
-
+      </div>
     </div>
+  </div>
+  
+  <!-- 隱藏的 input 元素 -->
+  <input type="file" class="hidden-input" accept="image/*">
+  
+  <script>
+    // 使用jQuery監聽編輯內容按鈕的點擊事件
+$('.edit-content-button').click(function() {
+  // 提示用戶輸入新的標題和內容
+  var newTitle = prompt('請輸入新的標題');
+  var newContent = prompt('請輸入新的內容');
+  
+  // 更新對應的card-title和card-text元素的文字內容
+  $(this).closest('.card-body').find('.card-title').text(newTitle);
+  $(this).closest('.card-body').find('.card-text').text(newContent);
+});
+  </script>
+ 
+
+
+<!--三大堅持區塊-->
+<div class="p-5 text-center_3">
+    <h1>三大堅持</h1>
+        <br>
+        <img src="images/intro.png" class="img-fluid">
 </div>
-</div>
-
-
-
-<!-- 新三大特點 -->
-<div class="container text-center mt-10 p-5">
-    <h1 class="mb-5">三大特點</h1>
-    <div class="row">
-        <div class="col-12 col-md-4">
-            <div class="card mb-4">
-                <img src="" alt="">
-                <div class="card-body">
-                    <i class="fas fa-clock fa-8x mb-5"></i>
-                    <h2 class="card-title">當日現宰<br>新鮮<br>真空包裝</h2>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-4">
-            <div class="card mb-4">
-                <img src="" alt="">
-                <div class="card-body">
-                    <i class="fa-solid fa-mortar-pestle fa-8x mb-5"></i> 
-                    <h2 class="card-title">紅糖、蜂蜜<br>香料燻製<br>天然食材無負擔</h2>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-4">
-            <div class="card mb-4">
-                <img src="" alt="">
-                <div class="card-body">
-                    <i class="fa-solid fa-utensils fa-8x mb-5"></i> 
-                    <h2 class="card-title">富含營養<br>肉質鮮甜<br>煙燻鹹水真美味</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 
 <!--營業時間區塊-->
 <div class="p-5 text-center_time bg-light">
     <h1>營業資訊</h1>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-2">
-                <div class="image-container ">
-                    <img src="images/Guangfu.jpg" alt="光復市場圖片" class="img-fluid rounded">
-                    <div class="caption d-flex justify-content-center align-items-center rounded">光復市場</div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="image-container">
-                    <img src="images/Yongchun.jpg" alt="永春市場圖片" class="img-fluid rounded">
-                    <div class="caption d-flex justify-content-center align-items-center rounded">永春市場</div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="image-container ">
-                    <img src="images/Guangfu.jpg" alt="光復市場圖片" class="img-fluid rounded">
-                    <a href="common-quest_nologin.html" class="text-black"><div class="caption d-flex justify-content-center align-items-center rounded">更多<br>市場資訊</div></a>
-                </div>
-            </div>
-            <div class="col-md-6 d-flex flex-column align-items-center mt-4">
-                <div class="my-auto">
-                    <h4 class="text-center_time " >營業時間：早上6:00 - 售完為止</h4>
-                    <div class="container d-flex align-items-center">
-                        <h5 class="p-3">台南下營 &nbsp;鋐茶鵝</h5>
-                        <a href="https://www.facebook.com/profile.php?id=100091698824828&mibextid=ZbWKwL"target="_blank"><i class="fa-brands fa-square-facebook fa-7x" style="color: #4267B2;"></i></a>
-                        <h5 class="p-3"> 官方Line帳號 </h5>
-                        <!-- 官方ＱＲ code 尚未補上 用icon暫替 -->
-                        <!-- <a href="#"><i class="fa-brands fa-line fa-9x" style="color: #1fd656;"></i></a> -->
-                        <a href="#"><i class="fa-sharp fa-solid fa-qrcode fa-7x" style="color:#555555"></i></a>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-3">
+    <h3>光復市場</h3>
+    <img src="images/Guangfu.jpg" alt="光復市場圖片" class="img-fluid rounded-circle">
+    </div>
+    <div class="col-md-3">
+    <h3>永春市場</h3>
+    <img src="images/Yongchun.jpg" alt="永春市場圖片" class="img-fluid rounded-circle">
+    </div>
+        <div class="col-md-6 d-flex flex-column align-items-center">
+        <div class="my-auto">
+            <h4 class="text-center_time">營業時間：早上6:00 - 售完為止</h4>
+            <br>
+            <a href="#" class="btn btn-warning">立即下單</a>
+            <a href="#" class="btn btn-outline-warning disabled">提供宅配服務 <img src="images/delivery.png" style="width: 20px;height:20px;"></a>
         </div>
+        </div>
+
+    </div>
     </div>
 </div>
-
 
 <!--登入彈窗區塊，有與JS配合-->
 <div id="login-modal" class="modal">
@@ -326,23 +305,112 @@ window.addEventListener('scroll', updateProgressBar);
 
 // 監聽視窗大小改變事件，當視窗大小改變時更新進度條
 window.addEventListener('resize', updateProgressBar);
-
-
-
-
-// 營業資訊圖片hover
-$(".image-container").hover(
-    function() {
-        $(this).find(".caption").css("opacity", 0.7);
-    },
-    function() {
-        $(this).find(".caption").css("opacity", 0);
-    }
-);
-
-
 </script>
 
+<!-- 更換幻燈片圖片 -->
+    <script>
+        // 獲取按鈕元素
+        var changepicButton = document.getElementById('changepic');
+        
+        // 獲取input元素
+        var fileInput = document.getElementById('file-input');
+        
+        // 獲取幻燈片內容元素
+        var carouselInner = document.querySelector('.carousel-inner');
+        
+        // 當按鈕被點擊時觸發input元素的點擊事件
+        changepicButton.addEventListener('click', function () {
+            fileInput.click();
+        });
+        
+        // 當選擇文件完成時執行回調
+        fileInput.addEventListener('change', function () {
+            var file = fileInput.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    // 獲取當前顯示的幻燈片
+                    var activeSlide = carouselInner.querySelector('.carousel-item.active img');
+                    // 將所選取的圖片設定為當前幻燈片的圖片
+                    activeSlide.src = e.target.result;
+                    // 將圖片路徑傳送至save.php
+                $.ajax({
+                    url: 'save.php',
+                    method: 'POST',
+                    data: {
+                        slide1: $('#slide1').attr('src'),
+                        slide2: $('#slide2').attr('src'),
+                        slide3: $('#slide3').attr('src')
+                    },
+                    success: function(response) {
+                        $('#slide1').attr('src', response.slide1);
+        $('#slide2').attr('src', response.slide2);
+        $('#slide3').attr('src', response.slide3);
+
+                        alert('圖片已成功更新！');
+                    },
+                    error: function() {
+                        alert('更新失敗！');
+                    }
+                });
+                };
+
+                
+                reader.readAsDataURL(file);
+            }
+        });
+        </script>
+
+<!-- 更改最新消息 -->
+<script>
+    // 獲取編輯按鈕元素
+    var editButtons = document.querySelectorAll('.editnewsbutton');
+    
+    // 迭代編輯按鈕並綁定點擊事件處理程序
+    editButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+    // 獲取目標編輯的編號
+    var target = button.getAttribute('data-target');
+    
+    // 獲取對應的 newsdate 和 newsdata 元素
+    var newsDate = document.querySelector('.newsdate[data-target="' + target + '"]');
+    var newsData = document.querySelector('.newsdata[data-target="' + target + '"]');
+    
+    // 在這裡可以進行相應的修改操作
+    // 例如使用 prompt() 函數來獲取新的日期和資料
+    var newDate = prompt('請輸入新的日期', newsDate.textContent);
+    var newData = prompt('請輸入新的資料', newsData.textContent);
+    
+    // 更新 newsdate 和 newsdata 元素的內容
+    newsDate.textContent = newDate;
+    newsData.textContent = newData;
+    });
+});
+</script>
+<!-- 更改熱門品項圖片 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.change-image-button').click(function() {
+      var imageId = $(this).data('image');
+      var imgElement = $('#' + imageId);
+      var hiddenInput = $('.hidden-input');
+
+      hiddenInput.on('change', function() {
+        var file = this.files[0];
+        if (file) {
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            imgElement.attr('src', e.target.result); // 更新圖片元素的 src 屬性
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+
+      hiddenInput.click(); // 觸發 input 元素的點擊事件
+    });
+  });
+</script>
 </body>
 
 </html>
