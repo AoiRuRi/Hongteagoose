@@ -2434,9 +2434,9 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-/* Button */
+/* Button 這段可以不用*/
 
-	input[type="submit"],
+	/* input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
 	button,
@@ -2556,7 +2556,7 @@ input, select, textarea {
 		.button:disabled {
 			pointer-events: none;
 			opacity: 0.25;
-		}
+		} */
 
 /* Tiles */
 
