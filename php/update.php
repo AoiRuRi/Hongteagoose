@@ -7,7 +7,7 @@ $dbname = 'hongteag_goose'; // 資料庫名稱
 
 // 建立資料庫連線
 $conn = new mysqli($host, $user, $password, $dbname);
-
+$conn->set_charset("utf8");
 // 檢查連線是否成功
 if ($conn->connect_error) {
     die("連線失敗: " . $conn->connect_error);

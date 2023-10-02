@@ -1,11 +1,11 @@
 <?php
-// 建立與資料庫的連線，這部分需要您根據自己的資料庫設定進行修改
-$host = 'localhost';
-$user = 'root';
-$password = '';
-$dbname = 'hongteag_goose';
+// 設定資料庫連線參數
+$host = 'localhost'; // 或 '127.0.0.1'
+$user = 'root'; // 使用者帳號
+$password = ''; // 使用者密碼
+$dbname = 'hongteag_goose'; // 資料庫名稱
 $conn = new mysqli($host, $user, $password, $dbname);
-
+$conn->set_charset("utf8");
 // 檢查連線是否成功
 if ($conn->connect_error) {
     die("連線失敗: " . $conn->connect_error);
